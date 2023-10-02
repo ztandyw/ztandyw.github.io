@@ -28,14 +28,26 @@
         z-index: -1;
         width: 50%;
       }
-      .red-text {
-        color: #FF0000; /* 绯红色 */
-      }
+     .red-text {
+            background: linear-gradient(90deg, #FF0000, transparent, #FF0000); /* 渐变背景 */
+            -webkit-background-clip: text; /* 使用文字作为背景剪切 */
+            color: transparent; /* 隐藏文字颜色 */
+            animation: blood 2s infinite alternate; /* 动画效果 */
+        }
+
+        @keyframes blood {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(5px); /* 在X轴上平移文字 */
+            }
+        }
     </style>
   </head>
   <body>
     <h1>恭喜你获得新成就：<br>
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="red-text">消失的阿雯</span></h1>
+      <br> <span class="red-text">消失的阿雯</span></h1>
     <img src="https://celingo.github.io/pic.io/66.png" alt="background" class="background-image">
   </body>
 </html>
