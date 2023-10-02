@@ -81,12 +81,21 @@
                 transform: translateX(0px); /* 在X轴上平移文字 */
             }
         }
+      .gre-text {
+            background: linear-gradient(0deg, ##64A88C, transparent, ##64A88C), 
+                        linear-gradient(45deg, ##64A88C, transparent, #FFFFFF),
+                        linear-gradient(65deg, ##64A88C, transparent, #FFFFFF); /* 渐变背景 */
+            -webkit-background-clip: text; /* 使用文字作为背景剪切 */
+            color: transparent; /* 隐藏文字颜色 */
+            animation: blood 6s infinite alternate; /* 动画效果 */
+        }
+
     </style>
   </head>
   <body>
-    <h1>恭喜你获得新成就：<br>
-      <br> <span class="red-text">消失的阿雯</span>
-      <br><br>I wish you happiness</h1>
+    <h1>恭喜你获得新成就：
+      <br><br> <span class="red-text">消失的阿雯</span>
+      <br><br><span class="gre-text">I wish you happiness</span></h1>
     
     <img src="https://ztandyw.github.io/pic.io/img06.jpg" alt="background" class="background-image">
     <img src="https://celingo.github.io/pic.io/66.png" alt="background" class="background-image-2">
