@@ -24,6 +24,7 @@
         background: linear-gradient(90deg, #FFFFFF, #FFFFFF 25px, #0000FF 25px, #0000FF 50px); /* 垂直方格 */
         background-size: 50px 50px; /* 方格大小 */
         opacity: 0.5; /* 降低伪元素的透明度 */
+        z-index: 1;
       }
       @keyframes backgroundFlow {
         0% {
@@ -43,7 +44,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 1;
+        z-index: 3;
       }
       
       .background-image {
@@ -51,7 +52,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: 2;
         width: 50%;
       }
      .red-text {
