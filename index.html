@@ -89,11 +89,20 @@
             color: transparent; /* 隐藏文字颜色 */
             animation: blood 6s infinite alternate; /* 动画效果 */
         }
-
+        @keyframes blood {
+            0% {
+                transform: translateX(0px);
+            }
+            50% {
+                transform: translateX(5px);
+            100% {
+                transform: translateX(0px); /* 在X轴上平移文字 */
+            }
+        }
     </style>
   </head>
   <body>
-    <h1>恭喜你获得新成就：
+    <h1>恭喜您获得新成就：
       <br><br> 
       <span class="red-text">消失的阿雯</span>
       <br><br>
