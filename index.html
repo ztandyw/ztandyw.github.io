@@ -4,8 +4,18 @@
     <meta charset="utf-8">
     <title>Lost In The Stars</title>
     <style>
-      body {
-        background-color: #F5F5FF;
+    body {
+        background-color: #800080; /* 紫色背景色 */
+        animation: backgroundFlow 4s infinite alternate; /* 背景流动动画 */
+      }
+
+      @keyframes backgroundFlow {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 0% 100%;
+        }
       }
       
       h1 {
