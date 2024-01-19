@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Lost In The Stars</title>
+    <title>风不会珊珊来迟</title>
     <style>
       :root {
         font-size: 20px;
@@ -11,7 +11,8 @@
         background: 
           repeating-linear-gradient(0deg, #FFFFFF, #FFFFFF 25px, #64A88C 25px, #64A88C 50px);/* 马赛克方格背景 */
         background-size: 50px 50px; /* 方格大小 */
-        animation: backgroundFlow 8s infinite alternate; /* 背景流动动画 */
+        animation: backgroundFlow 3s infinite alternate; /* 背景流动动画 */
+        z-index: -5;
       }
       body::before {
         content: ""; /* 添加伪元素内容 */
@@ -23,7 +24,7 @@
         background: linear-gradient(90deg, #FFFFFF, #FFFFFF 25px, #64A88C 25px, #64A88C 50px); /* 垂直方格 */
         background-size: 50px 50px; /* 方格大小 */
         opacity: 0.5; /* 降低伪元素的透明度 */
-        z-index: 1;
+        z-index: -4;
       }
       @keyframes backgroundFlow {
         0% {
@@ -38,77 +39,93 @@
         font-family: Bradley Hand ITC;
         font-size: 1.25rem;
         font-weight: bold;
-        color: #ffd700;
+        color: #00BFFF;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 4;
+        z-index: 1;
       }
-      
+      audio {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translatex(-50%);
+        opacity: 0.8;
+        zoom: 2.3;
+      }
+
       .background-image {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 2;
+        z-index: -3;
         width: 50%;
+        opacity: 0.9;
       }
       .background-image-2 {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 3;
+        z-index: -2;
         width: 50%;
+        opacity: 0.6;
       }
      .red-text {
-            background: linear-gradient(0deg, #FF0000, transparent, #FF0000), 
-                        linear-gradient(45deg, #FF0000, transparent, #FFFFFF),
-                        linear-gradient(65deg, #FF0000, transparent, #FFFFFF); /* 渐变背景 */
+            background: linear-gradient(0deg, #FF1493, transparent, #FF1493), 
+                        linear-gradient(45deg, #FF1493, transparent, #00BFFF),
+                        linear-gradient(65deg, #FF1493, transparent, #00BFFF); /* 渐变背景 */
             -webkit-background-clip: text; /* 使用文字作为背景剪切 */
             color: transparent; /* 隐藏文字颜色 */
             animation: blood 6s infinite alternate; /* 动画效果 */
+            z-index: 1;
+        }
+      .green-text {
+            background: linear-gradient(0deg, ##64A88C, transparent, ##64A88C), 
+                        linear-gradient(45deg, ##64A88C, transparent, #00BFFF),
+                        linear-gradient(65deg, ##64A88C, transparent, #00BFFF); /* 渐变背景 */
+            -webkit-background-clip: text; /* 使用文字作为背景剪切 */
+            animation: blood 6s infinite alternate; /* 动画效果 */
+            z-index: 1;
+        }
+        @keyframes blood {
+            0% {
+                transform: translateX(0px);
+            }
+            50% {
+                transform: translateX(5px);
+            100% {
+                transform: translateX(0px); /* 在X轴上平移文字 */
+            }
         }
 
-        @keyframes blood {
-            0% {
-                transform: translateX(0px);
-            }
-            50% {
-                transform: translateX(5px);
-            100% {
-                transform: translateX(0px); /* 在X轴上平移文字 */
-            }
-        }
-      .gre-text {
-            background: linear-gradient(0deg, ##64A88C, transparent, ##64A88C), 
-                        linear-gradient(45deg, ##64A88C, transparent, #FFFFFF),
-                        linear-gradient(65deg, ##64A88C, transparent, #FFFFFF); /* 渐变背景 */
-            -webkit-background-clip: text; /* 使用文字作为背景剪切 */
-            color: transparent; /* 隐藏文字颜色 */
-            animation: blood 6s infinite alternate; /* 动画效果 */
-        }
-        @keyframes blood {
-            0% {
-                transform: translateX(0px);
-            }
-            50% {
-                transform: translateX(5px);
-            100% {
-                transform: translateX(0px); /* 在X轴上平移文字 */
-            }
-        }
     </style>
   </head>
   <body>
-    <h1>&nbsp&nbsp&nbsp获得新成就：
-      <br><br> 
-      <span class="red-text">&nbsp&nbsp&nbsp消失的阿雯 </span>
-      <span class="red-text"><br><br>&nbsp&nbsp&nbspI wish you happiness</span>
+    <h1>&nbsp&nbsp&nbsp
+      <br>
+      <span class="red-text"><br> &nbsp&nbsp&nbspL </span>
+      <span class="red-text">L </span>
+      <span class="red-text">L </span>
+      <span class="red-text"><br> &nbsp&nbsp&nbspL</span>
+      <span class="red-text"><br> &nbsp&nbsp&nbspL</span>
+      <span class="red-text"><br> &nbsp&nbsp&nbspL</span>
+      <span class="red-text"><br> &nbsp&nbsp&nbspL</span>
+      <span class="red-text">L</span>
+      <br><br> <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      2023/12/31
     </h1>
     
-    <img src="https://ztandyw.github.io/pic.io/img06.jpg" alt="background" class="background-image">
+    <img src="图片替换" alt="background" class="background-image">
     <img src="https://celingo.github.io/pic.io/66.png" alt="background" class="background-image-2">
+    
+
+    <audio controls autoplay loop style="width: 400px; height: 100px;">
+      <source src="风不会姗姗来迟.aac" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
   </body>
 </html>
